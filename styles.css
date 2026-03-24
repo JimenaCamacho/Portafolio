@@ -116,6 +116,27 @@ strong {
   color: #ffffff;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  position: relative;
+  z-index: 110;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #2d3a2e;
+  border-radius: 2px;
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
 .hero {
   position: relative;
   background-color: #f5f7f5;
@@ -544,4 +565,111 @@ strong {
 .footer-copy {
   font-size: 0.8rem;
   color: #9aaa9b;
+}
+
+@media (max-width: 860px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: #ffffff;
+    border-left: 1px solid #d6e0d6;
+    padding: 80px 32px 32px;
+    z-index: 105;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.06);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .main-nav.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 48px;
+  }
+
+  .hero-image-wrap {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .edu-grid {
+    flex-direction: column;
+  }
+
+  .about-stats {
+    flex-direction: column;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero-image-wrap {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-name {
+    font-size: 3.6rem;
+  }
 }
