@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jimena Camacho | Portafolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <header class="site-header">
-    <div class="header-inner">
+    <div class="header-inner container">
       <div class="logo">Jimena Camacho</div>
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav">
         <a href="#sobre-mi">Acerca de mí</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#educacion">Educación</a>
         <a href="#skills">Skills</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
       </nav>
     </div>
   </header>
 
   <section class="hero" id="inicio">
-    <div class="hero-content">
+    <div class="container hero-content">
       <div class="hero-image-wrap">
         <img
           src="https://cataas.com/cat?width=400&height=400"
@@ -81,32 +84,40 @@
     <div class="container">
       <span class="section-tag">02</span>
       <h2 class="section-title">Experiencia</h2>
-      <div class="timeline-card">
-        <p class="timeline-period">Presente</p>
-        <h3 class="timeline-role">Desarrollo de IA & Front-End</h3>
-        <p class="timeline-company">Especialización independiente</p>
-        <p class="timeline-desc">
-          Diseño e implementación de soluciones de inteligencia artificial
-          integradas con interfaces web modernas y responsivas.
-        </p>
-        <div class="timeline-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">HTML / CSS / JS</span>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-period">Presente</p>
+            <h3 class="timeline-role">Desarrollo de IA & Front-End</h3>
+            <p class="timeline-company">Especialización independiente</p>
+            <p class="timeline-desc">
+              Diseño e implementación de soluciones de inteligencia artificial
+              integradas con interfaces web modernas y responsivas.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">HTML / CSS / JS</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="timeline-card">
-        <p class="timeline-period">ESCOM — IPN</p>
-        <h3 class="timeline-role">Ingeniera en Inteligencia Artificial</h3>
-        <p class="timeline-company">Escuela Superior de Cómputo</p>
-        <p class="timeline-desc">
-          Formación integral en algoritmos de aprendizaje automático,
-          análisis de datos y fundamentos de computación avanzada.
-        </p>
-        <div class="timeline-tags">
-          <span class="tag">Algoritmos</span>
-          <span class="tag">Análisis de Datos</span>
-          <span class="tag">Machine Learning</span>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-period">ESCOM — IPN</p>
+            <h3 class="timeline-role">Ingeniera en Inteligencia Artificial</h3>
+            <p class="timeline-company">Escuela Superior de Cómputo</p>
+            <p class="timeline-desc">
+              Formación integral en algoritmos de aprendizaje automático,
+              análisis de datos y fundamentos de computación avanzada.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Algoritmos</span>
+              <span class="tag">Análisis de Datos</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,6 +216,13 @@
       </div>
     </div>
   </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <span class="footer-logo">Jimena Camacho</span>
+      <p class="footer-copy">© 2025 · Todos los derechos reservados</p>
+    </div>
+  </footer>
 
 </body>
 </html>
